@@ -83,6 +83,15 @@
     pointer-events: none;
     transition: 0.5s ease;
 }
+#btnAdd{
+    margin-right: 10px;
+    border-radius: 20%;
+    width: auto;
+}
+#btnCancel{
+    border-radius: 20%;
+    width: auto;
+}
 .show{
     opacity: 1;
     pointer-events: auto;
@@ -128,4 +137,7 @@
 .form-control{
     flex-grow: 1;
     padding: 5px 2px;
+}
+.d-none{
+    display: none;
 }

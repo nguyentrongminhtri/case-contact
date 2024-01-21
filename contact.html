@@ -30,6 +30,7 @@
                     </tr>
                 </thead>
                 <tbody>
+
                 </tbody>
             </table>
         </div>
@@ -46,6 +47,7 @@
                         <div class="form-group">
                             <label for="name">name</label>
                             <input type="text" class="form-control" id="name">
+                            <input type="hidden" value="0" id="contactID">
                         </div>
                         <div class="form-group">
                             <label for="avatar">avatar</label>
@@ -61,18 +63,19 @@
                         </div>
                         <div class="form-group">
                             <label for="email"></label>
-                            <button class="btn-warning">add</button>
-                            <button class="btn-warning" onclick="closeModal()">cancel</button>
+                            <button id="btnAdd" class="btn-warning mr" onclick="addContact()">add</button>
+                            <button id="btnUpdate" class="btn btn-primary mr d-none" onclick="updateContact()">save</button>
+                            <button id="btnCancel" class="btn-warning" onclick="closeModal()">cancel</button>
                         </div>
                     </div>
                     <div class="preview-avatar">
-                        <img class="avatar-lg" src="/image/noavatar.jpg" alt="">
+                        <img class="avatar-lg" src="./image/noavatar.jpg" alt="">
                     </div>
                 </div>
 
             </div>
         </div>
     </div>
-<script src="contact.js"></script>
+<script src="./contact.js"></script>
 </body>
 </html>
